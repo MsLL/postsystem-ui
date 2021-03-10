@@ -4,6 +4,10 @@ import { Layout, Menu } from 'antd';
 import { Link } from 'react-router-dom'
 import styles from './style.less'
 
+// todo 一键换肤
+function mapColorModeClass(colorMode?: any) {
+    return styles.background_color_white
+}
 // ui参照多抓鱼：https://www.duozhuayu.com/
 function BasicLayout(props: any) {
     const { Header, Content, Footer } = Layout;
@@ -12,8 +16,8 @@ function BasicLayout(props: any) {
             {   // vh是可视区窗口的高度viewport height
                 // 宽度width设置为600，多出来的width用margin左右自动填充
             }
-            <Layout style={{ maxWidth: 600, margin: '0px auto', height: '100vh' }} className={styles.background_color_white}>
-                <Header className={styles.background_color_white}>
+            <Layout style={{ maxWidth: 600, margin: '0px auto', height: '100vh' }} className={mapColorModeClass()}>
+                <Header className={mapColorModeClass()}>
                     <Menu theme="light" mode="horizontal" defaultSelectedKeys={['0']}>
                         {
                             // here q means question
@@ -28,7 +32,7 @@ function BasicLayout(props: any) {
                 <Content style={{ padding: 10 }}>
                     {props.children}
                 </Content>
-                <Footer style={{ textAlign: 'center' }} className={styles.background_color_white}>Post System By upup??</Footer>
+                <Footer style={{ textAlign: 'center' }} className={mapColorModeClass()}>Post System By upup??</Footer>
             </Layout>
         </div>
     )

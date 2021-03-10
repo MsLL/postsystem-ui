@@ -10,9 +10,9 @@ export default defineConfig({
       path: '/',
       component: '@/layouts/BasicLayout.tsx',
       routes:[
-        { path: '/q/post', component: '@/pages/Question/PostQuestionPage.jsx' },
-        { path: '/q/fish', component: '@/pages/Question/FishQuestionPage.jsx' },
-        { path: '/q/my', component: '@/pages/Question/MyQuestionPage.jsx' ,title:'我的Q'},
+        { path: '/q/post', component: '@/pages/question/PostQuestionPage.jsx' },
+        { path: '/q/fish', component: '@/pages/question/FishQuestionPage.jsx' },
+        { path: '/q/my', component: '@/pages/question/MyQuestionPage.jsx' ,title:'我的Q'},
       ]
     },
   ],

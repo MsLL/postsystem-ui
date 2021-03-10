@@ -14,7 +14,7 @@ function BasicLayout(props: any) {
             }
             <Layout style={{ maxWidth: 600, margin: '0px auto', height: '100vh' }} className={styles.background_color_white}>
                 <Header className={styles.background_color_white}>
-                    <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']}>
+                    <Menu theme="light" mode="horizontal" defaultSelectedKeys={['0']}>
                         {
                             // here q means question
                         }

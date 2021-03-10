@@ -3,7 +3,7 @@ import SearchBox from "../component/SearchBox";
 export default () => {
   return (
       <>
-        todo : text input box
+        <SearchBox onInputChange={(input)=>{console.log('%o',input)}}></SearchBox>
       </>
   )
 }

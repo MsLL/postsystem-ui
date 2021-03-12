@@ -27,6 +27,10 @@ export default defineConfig({
           path: '/test/StatementInRenderMethod',
           component: '@/pages/test/StatementInRenderMethod.jsx',
         },
+        {
+          path: '/test/SetStateFieldSubFieldValDirectly',
+          component: '@/pages/test/SetStateFieldSubFieldValDirectly.jsx',
+        },
       ],
     },
   ],

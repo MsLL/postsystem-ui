@@ -4,7 +4,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  title: "Q",
+  title: 'Q',
   routes: [
     {
       path: '/',
@@ -12,14 +12,22 @@ export default defineConfig({
       routes: [
         {
           path: '/',
-          redirect:'/q/hub',
-          exact:true
+          redirect: '/q/hub',
+          exact: true,
         },
         { path: '/q/hub', component: '@/pages/question/QuestionHubPage.jsx' },
         { path: '/q/post', component: '@/pages/question/PostQuestionPage.jsx' },
         { path: '/q/fish', component: '@/pages/question/FishQuestionPage.jsx' },
-        { path: '/q/my', component: '@/pages/question/MyQuestionPage.jsx', title: '我的Q' },
-      ]
+        {
+          path: '/q/my',
+          component: '@/pages/question/MyQuestionPage.jsx',
+          title: '我的Q',
+        },
+        {
+          path: '/test/StatementInRenderMethod',
+          component: '@/pages/test/StatementInRenderMethod.jsx',
+        },
+      ],
     },
   ],
   fastRefresh: {},
